@@ -1,5 +1,5 @@
 # Project: Basta Fazoolin
-# Author: Viracocha-Inti
+# Author: Samir Valencia
 # A Python project demonstrating object-oriented programming concepts
 
 
@@ -11,6 +11,22 @@ class Menu:
         self.items = items
         self.start_time = start_time
         self.end_time = end_time
+
+    # String representation method, will communicate menu and times
+    def __repr__(self):
+        return (
+            f"Welcome to Basta Fazoolin. \n"
+            f"The {self.name!r} menu will be available from {self.start_time!r}00 to {self.end_time!r}00. \n"
+            f"Please take your time and enjoy your complimentary breadsticks"
+        )
+
+    # This method will add up the prizes of all the items that were purchased and return the total amount
+    def calculate_bill(self, purchased_items):
+        bill = 0
+        for purchased_item in purchased_items:
+            if purchased_item in self.items:
+                bill += self.items[purchased_item]
+        return bill
 
 
 # Next 4 categories contain the 4 menus that can be found in the restaurant 'Basta Fazooli'
@@ -68,3 +84,10 @@ kids = Menu(
     11,
     21,
 )
+print(brunch)
+
+# These are for testing the calculate bill method
+breakfast_order = ("pancakes", "home fries", "coffee")
+print("Total brunch order: ", brunch.calculate_bill(breakfast_order))
+early_bird_order = ("salumeria plate", "mushroom ravioli (vegan)")
+print("Total early bird order: ", early_bird.calculate_bill(early_bird_order))
