@@ -1,4 +1,5 @@
 # Main Menu class
+# Menus found in the Basta Fazoolin franchises as well as their times of service
 class Menu:
     # The constructor method __init__ used to access instance attributes and methods
     def __init__(self, name, items, start_time, end_time):

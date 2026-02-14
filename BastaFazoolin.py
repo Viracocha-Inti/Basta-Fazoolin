@@ -2,6 +2,7 @@
 # Author: Samir Valencia
 # A Python project demonstrating object-oriented programming concepts
 
+# Import statement that lets this module tap into the menu module
 from menu import brunch, early_bird, dinner, kids
 
 # Testing that the menu was imported properly and that the methods work.
