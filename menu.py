@@ -12,8 +12,7 @@ class Menu:
     def __repr__(self):
         return (
             f"Welcome to Basta Fazoolin. \n"
-            f"The {self.name!r} menu will be available from {self.start_time!r}00 to {self.end_time!r}00. \n"
-            f"Please take your time and enjoy your complimentary breadsticks"
+            f"The {self.name!r} menu will be available from {self.start_time!r}:00 - {self.end_time!r}:00. \n"
         )
 
     # This method will add up the prizes of all the items that were purchased and return the total amount

@@ -15,6 +15,14 @@ class Franchise:
     def __repr__(self):
         return f"Welcome to the Basta Fazoolin located at {self.address!r}. \n"
 
+    # This method will take in a time and return which menus are available
+    def available_menus(self, time):
+        available = []
+        for menu in self.menus:
+            if menu.start_time <= time <= menu.end_time:
+                available.append(menu)
+        return available
+
 
 # Next 2 variables contain our franchise locations and menus offered
 flagship_store = Franchise("1232 West End Road", [brunch, early_bird, dinner, kids])
@@ -23,4 +31,7 @@ new_installment = Franchise(
 )
 
 # Testing the string representation method
-print(flagship_store)
+# print(flagship_store)
+# Tests for available_menus method
+# print(flagship_store.available_menus(12))
+print(flagship_store.available_menus(17))
