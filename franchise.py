@@ -2,7 +2,7 @@
 # Will contain information about the different franchises for Basta Fazoolin restaurants
 
 # Import statement that lets this module tap into the menu module
-from menu import brunch, early_bird, dinner, kids
+from menu import brunch, early_bird, dinner, kids, arepas_menu
 
 
 class Franchise:
@@ -29,9 +29,5 @@ flagship_store = Franchise("1232 West End Road", [brunch, early_bird, dinner, ki
 new_installment = Franchise(
     "12 East Mulberry Street", [brunch, early_bird, dinner, kids]
 )
-
-# Testing the string representation method
-# print(flagship_store)
-# Tests for available_menus method
-# print(flagship_store.available_menus(12))
-print(flagship_store.available_menus(17))
+# Added new arepas franchise
+arepas_place = Franchise("189 Fitzgerald Avenue", arepas_menu)

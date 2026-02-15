@@ -79,3 +79,15 @@ kids = Menu(
     11,
     21,
 )
+# Added a new menu for new franchise
+arepas_menu = Menu(
+    "arepas menu",
+    {
+        "arepa pabellon": 7.00,
+        "pernil arepa": 8.50,
+        "guayanes arepa": 8.00,
+        "jamon arepa": 7.50,
+    },
+    10,
+    20,
+)
