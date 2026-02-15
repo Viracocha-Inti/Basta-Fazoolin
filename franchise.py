@@ -13,7 +13,7 @@ class Franchise:
 
     # String representation method, will communicate franchise locations and their menus
     def __repr__(self):
-        return f"Welcome to the Basta Fazoolin located at {self.address!r}. \n"
+        return f"Franchise location: {self.address!r}."
 
     # This method will take in a time and return which menus are available
     def available_menus(self, time):
@@ -30,4 +30,4 @@ new_installment = Franchise(
     "12 East Mulberry Street", [brunch, early_bird, dinner, kids]
 )
 # Added new arepas franchise
-arepas_place = Franchise("189 Fitzgerald Avenue", arepas_menu)
+arepas_place = Franchise("189 Fitzgerald Avenue", [arepas_menu])

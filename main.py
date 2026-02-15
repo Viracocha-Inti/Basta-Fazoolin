@@ -19,7 +19,7 @@ print("Total early bird order: ", early_bird.calculate_bill(early_bird_order))
 print(flagship_store)
 print(flagship_store.available_menus(12))
 print(flagship_store.available_menus(17))
-
+print(arepas_place.available_menus(12))
 # Testing business.py class/methods
 print(business_one)
 print(business_two)

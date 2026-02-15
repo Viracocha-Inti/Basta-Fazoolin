@@ -11,10 +11,7 @@ class Business:
 
     def __repr__(self):
         locations = [franchise.address for franchise in self.franchises]
-        return (
-            f"This business is known as, {self.name!r}. \n"
-            f"It is located at {locations!r}"
-        )
+        return f"Business Name: {self.name!r} \n" f"Located at: {locations!r}"
 
 
 # The 2 class variables for the 2 businesses owned

@@ -10,12 +10,9 @@ class Menu:
 
     # String representation method, will communicate menu and times
     def __repr__(self):
-        return (
-            f"Welcome to Basta Fazoolin. \n"
-            f"The {self.name!r} menu will be available from {self.start_time!r}:00 - {self.end_time!r}:00. \n"
-        )
+        return f"Menu: {self.name!r} Available times: {self.start_time!r}:00 - {self.end_time!r}:00."
 
-    # This method will add up the prizes of all the items that were purchased and return the total amount
+    # This method will add up the prices of all the items that were purchased and return the total amount
     def calculate_bill(self, purchased_items):
         bill = 0
         for purchased_item in purchased_items:
